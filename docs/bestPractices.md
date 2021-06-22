@@ -1,5 +1,7 @@
 # Custom Element Best Practices
 
+While writing custom elements, follow these best practices to make your element as robust and intuitive to use as possible.
+
 ## Reflect properties to attributes if that attribute is used as a styling hook
 
 We shouldn't assume that consumers of the component will always pass data as attributes. Some frameworks (e.g. Svelte and Preact) prefer to pass data as properties. Because of that, if we are using the presence of an attribute as a styling hook (e.g. `:host[disabled]`), we should reflect the corresponding property to an attribute to ensure consistent behavior.
@@ -36,7 +38,7 @@ This has two main benefits:
 
 ### Additional reference
 - [Svelte and boolean attributes](https://css-tricks.com/using-custom-elements-in-svelte/#boolean-attributes)
-- [auro-badge PR](https://github.com/AlaskaAirlines/auro-badge/pull/11)
+- Reference auro-badge [pull request](https://github.com/AlaskaAirlines/auro-badge/pull/11)
 
 
 ## Additional resources
